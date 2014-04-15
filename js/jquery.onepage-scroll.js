@@ -295,7 +295,9 @@
     }else{
       $(settings.sectionContainer + "[data-index='1']").addClass("active")
       $("body").addClass("viewing-page-1")
-      if(settings.pagination == true) $(".onepage-pagination li a" + "[data-index='1']").addClass("active");
+      if(settings.pagination == true) $(".onepage-pagination li a" + "[data-index='1']").addClass("active tooltip").prop('title', 'Index');
+      if(settings.pagination == true) $(".onepage-pagination li a" + "[data-index='2']").addClass("tooltip").prop('title', 'ABOUT');
+      if(settings.pagination == true) $(".onepage-pagination li a" + "[data-index='3']").addClass("tooltip").prop('title', 'WHAT WE DO');
     }
     if(settings.pagination == true)  {
       $(".onepage-pagination li a").click(function (){

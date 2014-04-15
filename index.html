@@ -19,6 +19,7 @@
   <!-- Add the raphael scripts -->
   <script src="js/raphael.js"></script>
   <script src="js/handdraw.js"></script>
+  <script src="js/jquery.powertip.js"></script>
   <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
   <link href='css/style.css' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
@@ -29,7 +30,15 @@
         sectionContainer: "section",
         responsiveFallback: 600
       });
+
+
+      	$('.tooltip').powerTip({
+            placement: 'w',
+            smartPlacement: true
+          });
+
 		});
+
 		
 	</script>
 </head>

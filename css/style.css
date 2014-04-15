@@ -362,3 +362,27 @@ html {
       margin-right: auto;
       right: 0;
     }
+
+
+    /* PowerTip Plugin */
+#powerTip {
+  cursor: default;
+  background-color: transparent;
+  border-radius: 6px;
+  color: #ccc;
+  display: none;
+  padding: 0px;
+  position: absolute;
+  white-space: nowrap;
+  z-index: 2147483647;
+}
+#powerTip:before {
+  content: "";
+  position: absolute;
+}
+
+#powerTip.w:before {
+  border-left: 10px solid #333;
+  border-left: 10px solid rgba(0, 0, 0, 0.8);
+  right: -5px;
+}
